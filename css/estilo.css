@@ -1,0 +1,185 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+    margin-top: -100px; 
+}
+
+/* NAVEGACION */
+
+.logo{
+    position: fixed;
+    margin-top: -45px;
+    width: 140px;
+}
+
+.navbar-nav {
+    position: relative;
+    top: 25px;
+    width: 100%;
+    z-index: 1;
+    right: 10px;
+    justify-content: center;
+}
+
+.nav-item {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+.nav-link{
+    color: rgb(122, 115, 115);
+}
+
+.nav-link:hover{
+    color: rgb(59, 59, 59);
+}
+
+.nav-item:hover .dropdown-menu {
+    display: inline;
+    margin-top: -5px;
+
+}
+
+.dropdown-menu {
+    border: none;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+.dropdown-menu a {
+    color: rgb(29, 29, 29);
+    display: block;
+    border: none;
+    float: right;
+    transition: transform .3s;
+}
+
+.carrito {
+    position: absolute;
+    width: 23px;
+    top: 15px;
+    right: 20px;
+}
+
+.nav-container {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 2;
+    transition: opacity 1s;
+}
+
+.nav-container:hover{
+    height: 100px;
+    opacity: 1;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-nav {
+        justify-content: start;
+    }
+
+    .navbar-nav:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+    }
+
+    .navbar-nav:hover .dropdown-menu {
+        height: auto;
+    }
+
+    .navbar-toggler {    
+        position: absolute;
+        top: 15px;
+        left: 10px; 
+    }
+
+    .navbar-toggler:hover {
+        display: block; 
+    }
+      
+    .navbar-nav {
+        position: static;
+        justify-content: left;
+    }
+
+    .nav-item {
+        margin-left: 30px;
+        background-color: #fff;
+    }
+
+    .logo {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 70px;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+    }
+}
+
+/* SLIDER */
+
+.carousel{
+    position: relative;
+    z-index: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    box-shadow: 218px 10px 10px rgba(0, 0, 0, 30);;
+}
+
+/* PACK DE PRODUCTOS */
+
+.Titulopackdemuebles{
+    text-align: center;
+}
+
+.textopack{
+    text-align: center;
+}
+
+.contenedor-pack {
+    overflow: hidden;
+    height: 100%; 
+    transition: all 0.3s ease-in-out;
+    display: flex; 
+    align-items: center; 
+}
+
+.contenedor-pack:hover {
+    transform: scale(1.03);
+}
+
+.pack {
+    max-width: 100%; 
+    margin: 5px;
+}
+
+/* PRODUCTO EN STOCK */
