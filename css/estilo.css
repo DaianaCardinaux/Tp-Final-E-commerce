@@ -31,11 +31,11 @@ main {
   }
 
 .nav-link{
-    color: rgb(122, 115, 115);
+    color: rgb(66, 66, 66);
 }
 
 .nav-link:hover{
-    color: rgb(59, 59, 59);
+    color: rgb(37, 37, 37);
 }
 
 .nav-item:hover .dropdown-menu {
