@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;900&display=swap');
 
 * {
 	margin: 0;
@@ -6,6 +7,7 @@
 
 main {
     margin-top: -100px; 
+    font-family: 'Nunito', sans-serif;
 }
 
 /* NAVEGACION */
@@ -28,7 +30,7 @@ main {
 .nav-item {
     margin-right: 10px;
     margin-left: 0;
-  }
+}
 
 .nav-link{
     color: rgb(66, 66, 66);
@@ -275,3 +277,32 @@ main {
 }
 
 
+.preguntas{
+    background-color: #faa888;
+}
+
+.botones{
+    background-color: #faa888;
+    border-color: #FFC787;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding:10px;
+    color: black;
+    box-shadow: -7px 7px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-hover:hover{
+    background-color: #f0b3aa;
+}
+
+.pie{
+    background-color: #faa888;
+}
+
+.iconos-redes{
+    font-size: 40px;
+    color:black;
+}

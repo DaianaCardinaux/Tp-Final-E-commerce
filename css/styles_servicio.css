@@ -27,7 +27,7 @@ body{
 }
 
 .btn-hover:hover{
-    background-color: #D63D27;
+    background-color: #e4beb8;
 }
 
 .preguntas{
@@ -55,3 +55,4 @@ body{
 .sombra{
     box-shadow: -7px 7px 30px rgba(255, 255, 0, 0.3);
 }
+
