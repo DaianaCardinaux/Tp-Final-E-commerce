@@ -41,25 +41,6 @@ main {
     color: rgb(37, 37, 37);
 }
 
-.nav-item:hover .dropdown-menu {
-    display: inline;
-    margin-top: -5px;
-
-}
-
-.dropdown-menu {
-    border: none;
-    overflow: hidden;
-    border-radius: 0px;
-}
-
-.dropdown-menu a {
-    color: rgb(29, 29, 29);
-    display: block;
-    border: none;
-    float: right;
-    transition: transform .3s;
-}
 
 .carrito {
     position: absolute;
@@ -95,20 +76,6 @@ main {
 @media screen and (max-width: 991px) {
     .navbar-nav {
         justify-content: start;
-    }
-
-    .navbar-nav:hover .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown-menu {
-        height: 0;
-        overflow: hidden;
-        transition: height 0.3s ease-in-out;
-    }
-
-    .navbar-nav:hover .dropdown-menu {
-        height: auto;
     }
 
     .navbar-toggler {    
@@ -277,57 +244,7 @@ main {
     color: rgb(185, 30, 30);
 }
 
-/* ------------------------------ QUIENES SOMOS ---------------------------------------- */
-
-.ContainerParrafo{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-}
-
-.TituloNuestraHistoria{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 35px;
-    text-align: center;
-}
-
-.NuestraHistoria{
-    text-align: justify;
-    font-size: 17px;
-}
-
-/* SLIDER */
-*{
-    background-color: rgb(255, 236, 211);
-}
-
-.slider2{
-    position: absolute;
-    width: 500px;
-}
-
-.carousel2 img {
-    height: 350px;
-    object-fit: cover;
-}
-
-@media screen and (max-width: 991px) {
-    .slider2{
-        position: absolute;
-        width: 500px;
-        margin-top: 120px;
-    }
-    
-    .carousel2 img {
-        max-width: 100%;
-        height: 350px;
-        object-fit: cover;
-    }
-}
-
+/* ------- SERVICIO AL CLIENTE -------- */
 
 .preguntas{
     background-color: #faa888;
@@ -358,3 +275,5 @@ main {
     font-size: 40px;
     color:black;
 }
+
+
