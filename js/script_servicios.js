@@ -27,4 +27,4 @@ $(document).ready(function() {
     });
 });
 
-//Sacado de google
+//Sacado de google con el objetivo de lograr la animacion
