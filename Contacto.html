@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/script_servicios.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="./css/estilo.css" rel="stylesheet"/>
+    <link rel="icon" type="imagen/jpg" href="./imagenes/favicon 2.png">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid nav-container ContainerEstatico">
+            <nav class="navbar navbar-expand-lg">
+    
+                <a href="index.html">
+                <img src="imagenes/logo.png" class="logo" >
+                </a>
+    
+                <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+    
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">¿Quienes somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicio.html">Servicio al cliente</a>
+                </li>
+            </ul>
+            </div>
+            </nav> 
+            <a href="VA EL LINK PARA LA PAGINA DE CARRITO">
+                <img src="imagenes/shoppingcart_85988.png" alt="Icono" class="carrito">
+            </a>
+        </div>   
+    </header>
+
+    <main>
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <form class="justify-content-center contacto1">
+                    <h4>Ingrese sus datos para que nos pongamos en contacto contigo.</h4><br>
+                    <div class="row justify-content-center" >
+                        <div class="col-5">
+                            <label for="nombre_reclamo" class="form-label">Nombre</label>
+                            <input type="text" id="nombre_reclamo" class="form-control" required>
+                        </div>
+                        <div class="col-5">
+                            <label for="apellido_reclamo" class="form-label">Apellido</label>
+                            <input type="text" id="apellido_reclamo" class="form-control" required>
+                        </div>
+                    </div><br>
+                    <div class="row justify-content-center">
+                        <div class="col-5">
+                            <label for="email_reclamo" class="form-label">Dirección de correo</label>
+                            <input type="email" class="form-control" id="email_reclamo" required>
+                        </div>
+                        
+                        <div class="col-5">
+                            <label for="numero_reclamo" class="form-label">Numero de contacto</label>
+                            <input type="number" class="form-control" id="numero_reclamo" required>
+                        </div>
+
+                        <div class="col-10 contact-info">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="col-10"><br>
+                            <label for="formFileMultiple" class="form-label">Si tienes un reclamo, sube tu orden de compra aquí.</label>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4 mt-3">
+                            <button type="submit" class="btn btn-primary btn-hover p-2 botoncontacto">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div><br><br>
+    </main>
+
+    <footer>
+        <div class="container-fluid pie3 pt-3 text-black">
+            <div class="row pt-3">
+                <div class="col-3">
+                    <h6 class="text-center">Contacto</h6>
+                    <ul>
+                        <p>Teléfono:</p>
+                        <li>0810 220 0020</li>
+                        <p>Whatsapp:</p>
+                        <li>1150557091</li>
+                        <p>Email:</p>
+                        <li>mevlermuebles@gmail.com</li>
+                        <p>Horarios:</p>
+                        <li>Lunes a Viernes de 10 a 20hs</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h6 class="text-center">Sucursales</h6>
+                    <ul>
+                        <p>Flores</p>
+                        <li>Av. San Pedrito 58 - CABA</li>
+                        <p>Liniers</p>
+                        <li>Av. Rivadavia 11276 - CABA</li>
+                        <p>Mendoza</p>
+                        <li>Av. San Martin 820 - Ciudad de Mendoza</li>
+                    </ul>
+                </div>
+                <div class="col-6 justify-content-center align-items-center text-center mt-5">
+                    <h6 class="text-center mb-5">No te olvides de seguirnos en:</h6>
+                    <i class="bi bi-instagram iconos-redes m-5"></i>
+                    <i class="bi bi-facebook iconos-redes m-5"></i>
+                    <i class="bi bi-twitter iconos-redes m-5"></i>
+                </div>
+            </div>
+            <div class="row p-3 justify-content-between">
+                <div class="col-3 text-center text-black">
+                    <a href="" target="_blank" class="text-decoration-none iconos-redes fs-5 text-black">Términos y Condiciones</a>
+                </div>
+                <div class="col-3 text-center text-black">
+                    <a href="" target="_blank" class="text-decoration-none iconos-redes fs-5 text-black">Privacidad</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-3 m-0 pie2 text-center">
+            <p>Derechos Reservados</p>
+            <p>&copy 2023 Daia/Franco </p>
+        </div>
+    </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
