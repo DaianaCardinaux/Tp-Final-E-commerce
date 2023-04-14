@@ -8,7 +8,6 @@
     <title>MEVLER</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/script_index.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link href="./css/estilo.css" rel="stylesheet"/>
     <link rel="icon" type="imagen/jpg" href="./imagenes/favicon 2.png">
@@ -363,9 +362,9 @@
                                         <p class="fst-italic">Creada por el diseñador de interiores frances Richard Moule</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$12 150</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                        <form action="" id="formulario_silla_1">
+                                            <label for="cantidad_silla_1" class="titulosillas fw-bolder">Cantidad</label>
+                                            <select class="form-select" id="cantidad_silla_1" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -379,17 +378,15 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="silla1" value="marron" style="background-color: #996600;" title="Color disponible" onclick="cambiarImagenSilla1('./imagenes/sillas/silla comedor marron claro.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="silla1" value="negro" style="background-color:#000000;" title="Color disponible" onclick="cambiarImagenSilla1('./imagenes/sillas/silla comedor negra y beige.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="silla1" value="blanco" style="background-color:#EEEEEE;" title="Color disponible" onclick="cambiarImagenSilla1('./imagenes/sillas/silla comedor negra y blanca.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_silla_1" value="marron" style="background-color: #996600;" title="Color disponible" onclick="cambiarImagenSilla1('./imagenes/sillas/silla comedor marron claro.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_silla_1" value="negro" style="background-color:#000000;" title="Color disponible" onclick="cambiarImagenSilla1('./imagenes/sillas/silla comedor negra y beige.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_silla_1" value="blanco" style="background-color:#EEEEEE;" title="Color disponible" onclick="cambiarImagenSilla1('./imagenes/sillas/silla comedor negra y blanca.jpg')">
                                             </div>
+                                            <button type="submit" class="btn btn-primary btn-hover p-2 botones mt-5">Agregar al Carrito</button>
                                         </form>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary botones ">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -414,8 +411,8 @@
                                         <p class="fst-italic">Creada por el diseñador de interiores frances Richard Moule</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$11 999</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
+                                        <form action="" id="formulario_silla_2">
+                                            <label for="cantidad_silla_2" class="titulosillas fw-bolder">Cantidad</label>
                                             <select class="form-select" id="floatingSelect" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
@@ -430,16 +427,14 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="silla2" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenSilla2('./imagenes/sillas/silla entera blanca.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="silla2" value="negro" style="background-color:#000000;" title="Color disponible" onclick="cambiarImagenSilla2('./imagenes/sillas/silla negra entera.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_silla_2" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenSilla2('./imagenes/sillas/silla entera blanca.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_silla_2" value="negro" style="background-color:#000000;" title="Color disponible" onclick="cambiarImagenSilla2('./imagenes/sillas/silla negra entera.jpg')">
                                             </div>
+                                            <button type="submit" class="btn btn-primary btn-hover p-2 botones mt-5">Agregar al Carrito</button>
                                         </form>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary botones ">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -464,9 +459,9 @@
                                         <p class="fst-italic">Creada por el diseñador de interiores argentino Ricardo Fort</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$16 100</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                        <form action="" id="formulario_silla_3">
+                                            <label for="cantidad_silla_3" class="titulosillas fw-bolder">Cantidad</label>
+                                            <select class="form-select" id="cantidad_silla_3" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -480,17 +475,15 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="silla3" value="azul" style="background-color: #3366CC;" title="Color disponible" onclick="cambiarImagenSilla3('./imagenes/sillas/silla tapizada azul.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="silla3" value="gris" style="background-color:#BBBBBB;" title="Color disponible" onclick="cambiarImagenSilla3('./imagenes/sillas/silla tapizada gris.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="silla3" value="roja" style="background-color:#FF3300;" title="Color disponible" onclick="cambiarImagenSilla3('./imagenes/sillas/silla tapizada roja.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_silla_3" value="azul" style="background-color: #3366CC;" title="Color disponible" onclick="cambiarImagenSilla3('./imagenes/sillas/silla tapizada azul.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_silla_3" value="gris" style="background-color:#BBBBBB;" title="Color disponible" onclick="cambiarImagenSilla3('./imagenes/sillas/silla tapizada gris.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_silla_3" value="roja" style="background-color:#FF3300;" title="Color disponible" onclick="cambiarImagenSilla3('./imagenes/sillas/silla tapizada roja.jpg')">
                                             </div>
+                                            <button type="submit" class="btn btn-primary btn-hover p-2 botones mt-5">Agregar al Carrito</button>
                                         </form>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary botones ">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -517,9 +510,9 @@
                                         <p class="fst-italic">Creada por el diseñador de interiores argentino Ricardo Fort</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$53 500</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                        <form action="" id="formulario_mesa_1">
+                                            <label for="cantidad_mesa_1" class="titulosillas fw-bolder">Cantidad</label>
+                                            <select class="form-select" id="cantidad_mesa_1" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -533,8 +526,8 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="mesa1" value="negra" style="background-color: #000000;" title="Color disponible" onclick="cambiarImagenMesa1('./imagenes/mesas/mesa cuadrada pequeña negra_.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="mesa1" value="marron" style="background-color:#996633;" title="Color disponible" onclick="cambiarImagenMesa1('./imagenes/mesas/mesa cuadrada pequeña marron oscuro_.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_1" value="negra" style="background-color: #000000;" title="Color disponible" onclick="cambiarImagenMesa1('./imagenes/mesas/mesa cuadrada pequeña negra_.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_1" value="marron" style="background-color:#996633;" title="Color disponible" onclick="cambiarImagenMesa1('./imagenes/mesas/mesa cuadrada pequeña marron oscuro_.jpg')">
                                             </div>
                                         </form>
                                     </div>
@@ -567,9 +560,9 @@
                                         <p class="fst-italic">Creada por el diseñador de interiores argentino Ricardo Fort</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$72 840</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                        <form action="" id="formulario_mesa_2">
+                                            <label for="cantidad_mesa_2" class="titulosillas fw-bolder">Cantidad</label>
+                                            <select class="form-select" id="cantidad_mesa_2" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -583,9 +576,9 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="mesa2" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenMesa2('./imagenes/mesas/mesa blanca cuadrada.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="mesa2" value="marron" style="background-color:#663300;" title="Color disponible" onclick="cambiarImagenMesa2('./imagenes/mesas/mesa marron cuadrada.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="mesa2" value="marronclaro" style="background-color:#d47414;" title="Color disponible" onclick="cambiarImagenMesa2('./imagenes/mesas/mesa marron claro cuadrada.jpg)">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_2" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenMesa2('./imagenes/mesas/mesa blanca cuadrada.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_2" value="marron" style="background-color:#663300;" title="Color disponible" onclick="cambiarImagenMesa2('./imagenes/mesas/mesa marron cuadrada.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_2" value="marronclaro" style="background-color:#d47414;" title="Color disponible" onclick="cambiarImagenMesa2('./imagenes/mesas/mesa marron claro cuadrada.jpg)">
                                             </div>
                                         </form>
                                     </div>
@@ -618,9 +611,9 @@
                                         <p class="fst-italic">Creada por el diseñador de interiores japones Ghon Chon</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$84 300</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                        <form action="" id="formulario_mesa_3">
+                                            <label for="cantidad_mesa_3" class="titulosillas fw-bolder">Cantidad</label>
+                                            <select class="form-select" id="cantidad_mesa_3" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -634,8 +627,8 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="mesa3" value="negra" style="background-color: #000000;" title="Color disponible" onclick="cambiarImagenMesa3('./imagenes/mesas/mesa negra rectangular.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="mesa3" value="marron" style="background-color:#663300;" title="Color disponible" onclick="cambiarImagenMesa3('./imagenes/mesas/mesa marron rectangular.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_3" value="negra" style="background-color: #000000;" title="Color disponible" onclick="cambiarImagenMesa3('./imagenes/mesas/mesa negra rectangular.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_3" value="marron" style="background-color:#663300;" title="Color disponible" onclick="cambiarImagenMesa3('./imagenes/mesas/mesa marron rectangular.jpg')">
                                             </div>
                                         </form>
                                     </div>
@@ -669,9 +662,9 @@
                                         <p class="fst-italic">Organizador de plastico duro, con 4 cajones transparentes con un tamaño de 50 centimetros de alto y 20 centimetrose ancho</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$28 500</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                        <form action="" id="formulario_organizador_1">
+                                            <label for="cantidad_organizador_1" class="titulosillas fw-bolder">Cantidad</label>
+                                            <select class="form-select" id="cantidad_organizador_1" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -685,8 +678,8 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="organizador1" value="negra" style="background-color: #000000;" title="Color disponible" onclick="cambiarImagenOrganizador1('./imagenes/organizadores/cajon de almacenamiento negro.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="organizador1" value="blanco" style="background-color:#EEEEEE;" title="Color disponible" onclick="cambiarImagenOrganizador1('./imagenes/organizadores/cajon de almacenamiento negro.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_organizador_1" value="negra" style="background-color: #000000;" title="Color disponible" onclick="cambiarImagenOrganizador1('./imagenes/organizadores/cajon de almacenamiento negro.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_organizador_1" value="blanco" style="background-color:#EEEEEE;" title="Color disponible" onclick="cambiarImagenOrganizador1('./imagenes/organizadores/cajon de almacenamiento negro.jpg')">
                                             </div>
                                         </form>
                                     </div>
@@ -718,9 +711,9 @@
                                         <p class="fst-italic">Comoda con 6 cajones forrados con tela, con un tamaño de 1 metro de alto y 80 centimetros de ancho</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$45 600</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                        <form action="" id="formulario_organizador_2">
+                                            <label for="cantidad_organizador_2" class="titulosillas fw-bolder">Cantidad</label>
+                                            <select class="form-select" id="cantidad_organizador_2" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -734,8 +727,8 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="organizador2" value="negra" style="background-color: #000000;" title="Color disponible" onclick="cambiarImagenOrganizador2('./imagenes/organizadores/comoda de almacenamiento negra.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="organizador2" value="gris" style="background-color:#AAAAAA;" title="Color disponible" onclick="cambiarImagenOrganizador2('./imagenes/organizadores/comoda de almacenamiento gris.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_organizador_2" value="negra" style="background-color: #000000;" title="Color disponible" onclick="cambiarImagenOrganizador2('./imagenes/organizadores/comoda de almacenamiento negra.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_organizador_2" value="gris" style="background-color:#AAAAAA;" title="Color disponible" onclick="cambiarImagenOrganizador2('./imagenes/organizadores/comoda de almacenamiento gris.jpg')">
                                             </div>
                                         </form>
                                     </div>
@@ -767,9 +760,9 @@
                                         <p class="fst-italic">Organizador para 24 frascos de especias con tres cajones desplegables, con un tamaño cuadrado de 30 centimetros, perfecto para colocar en lugares pequeños</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$64 800</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                        <form action="" id="formulario_organizador_3">
+                                            <label for="cantidad_organizador_3" class="titulosillas fw-bolder">Cantidad</label>
+                                            <select class="form-select" id="cantidad_organizador_3" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -783,8 +776,8 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="organizador3" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenOrganizador3('./imagenes/organizadores/organizador de especias blanco.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="organizador3" value="gris" style="background-color:#AAAAAA;" title="Color disponible" onclick="cambiarImagenOrganizador3('./imagenes/organizadores/organizador de especias gris oscuro.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_organizador_3" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenOrganizador3('./imagenes/organizadores/organizador de especias blanco.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_organizador_3" value="gris" style="background-color:#AAAAAA;" title="Color disponible" onclick="cambiarImagenOrganizador3('./imagenes/organizadores/organizador de especias gris oscuro.jpg')">
                                             </div>
                                         </form>
                                     </div>
@@ -818,9 +811,9 @@
                                         <p class="fst-italic">Armario de 1.40 metros de alto y 40 centimetros de ancho, con capacidad de almacenamiento de 20 pares de zapatillas</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$105 000</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                        <form action="" id="formulario_armario_1">
+                                            <label for="cantidad_armario_1" class="titulosillas fw-bolder">Cantidad</label>
+                                            <select class="form-select" id="cantidad_armario_1" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -834,9 +827,9 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="armario1" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenArmario1('./imagenes/armario/armario de almacenamiento blanco.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="armario1" value="gris" style="background-color:#AAAAAA;" title="Color disponible" onclick="cambiarImagenArmario1('./imagenes/armario/armario de almacenamiento gris.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="armario1" value="negro" style="background-color:#000000;" title="Color disponible" onclick="cambiarImagenArmario1('./imagenes/armario/armario de almacenamiento negro.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_armario_1" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenArmario1('./imagenes/armario/armario de almacenamiento blanco.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_armario_1" value="gris" style="background-color:#AAAAAA;" title="Color disponible" onclick="cambiarImagenArmario1('./imagenes/armario/armario de almacenamiento gris.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_armario_1" value="negro" style="background-color:#000000;" title="Color disponible" onclick="cambiarImagenArmario1('./imagenes/armario/armario de almacenamiento negro.jpg')">
                                             </div>
                                         </form>
                                     </div>
@@ -868,9 +861,9 @@
                                         <p class="fst-italic">Armario para el guardado de mercaderia, dividido en 2 partes, con una altura total de 2 metros y un ancho de 1 metro, perfecto para lugares amplios</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$145 000</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                        <form action="" id="formulario_armario_2">
+                                            <label for="cantidad_armario_2" class="titulosillas fw-bolder">Cantidad</label>
+                                            <select class="form-select" id="cantidad_armario_2" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -884,9 +877,9 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="armario2" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenArmario2('./imagenes/armario/armario de ropa blanco.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="armario2" value="gris" style="background-color:#AAAAAA;" title="Color disponible" onclick="cambiarImagenArmario2('./imagenes/armario/armario de ropa gris.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="armario2" value="negro" style="background-color:#000000;" title="Color disponible" onclick="cambiarImagenArmario2('./imagenes/armario/armario de ropa negro.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_armario_2" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenArmario2('./imagenes/armario/armario de ropa blanco.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_armario_2" value="gris" style="background-color:#AAAAAA;" title="Color disponible" onclick="cambiarImagenArmario2('./imagenes/armario/armario de ropa gris.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_armario_2" value="negro" style="background-color:#000000;" title="Color disponible" onclick="cambiarImagenArmario2('./imagenes/armario/armario de ropa negro.jpg')">
                                             </div>
                                         </form>
                                     </div>
@@ -918,9 +911,9 @@
                                         <p class="fst-italic">Armario perfecto para habitaciones, con 2 puertas corredizas, con 3 divisiones interiores, una con 4 cajones, otra con 5 estantes y una mayor con un gran perchero. Un alto total de 1.50 metros y 70 centimetros de ancho</p>
                                         <h6 class="text-center titulosillas fw-bolder">Precio</h6>
                                         <p class="fst-italic text-center">$125 500</p>
-                                        <form action="">
-                                            <label for="floatingSelect" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                        <form action="" id="formulario_armario_3">
+                                            <label for="cantidad_armario_3" class="titulosillas fw-bolder">Cantidad</label>
+                                            <select class="form-select" id="cantidad_armario_3" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -934,8 +927,8 @@
                                             </select>
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="armario3" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenArmario3('./imagenes/armario/armario despensa blanco.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="armario3" value="gris" style="background-color:#AAAAAA;" title="Color disponible" onclick="cambiarImagenArmario3('./imagenes/armario/armario despensa gris.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_armario_3" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenArmario3('./imagenes/armario/armario despensa blanco.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_armario_3" value="gris" style="background-color:#AAAAAA;" title="Color disponible" onclick="cambiarImagenArmario3('./imagenes/armario/armario despensa gris.jpg')">
                                             </div>
                                         </form>
                                     </div>
@@ -999,7 +992,7 @@
             <p>&copy 2023 Daia/Franco </p>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./js/script_index.js"></script>
 </body>
 </html>
