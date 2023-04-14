@@ -44,9 +44,9 @@
         </ul>
         </div>
         </nav> 
-        <a href="VA EL LINK PARA LA PAGINA DE CARRITO">
+        <button type="button" class="btn btn-primary bg-transparent border border-0" data-bs-toggle="modal" data-bs-target="#carrito">
             <img src="imagenes/shoppingcart_85988.png" alt="Icono" class="carrito">
-        </a>
+        </button>
     </div>   
     </header>
 
@@ -413,7 +413,7 @@
                                         <p class="fst-italic text-center">$11 999</p>
                                         <form action="" id="formulario_silla_2">
                                             <label for="cantidad_silla_2" class="titulosillas fw-bolder">Cantidad</label>
-                                            <select class="form-select" id="floatingSelect" aria-label="Cantidad">
+                                            <select class="form-select" id="cantidad_silla_2" aria-label="Cantidad">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -941,6 +941,27 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- MODAL CARRITO -->
+            <div class="modal fade" id="carrito" tabindex="-1" aria-labelledby="carrito" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-sm-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 Titulostock fw-bold pb-3" id="exampleModalLabel">Carrito de Productos</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="contenedor-carrito">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary botones ">Enviar pedido</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
     </main><br>
 
