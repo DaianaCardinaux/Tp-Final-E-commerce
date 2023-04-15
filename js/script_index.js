@@ -232,6 +232,5 @@ pedido_organizador_3.addEventListener('submit', function(event) {
     let color_organizador_3 = document.getElementById('color_organizador_3').value;
 
     agregarProducto("Organizador de especias", color_organizador_3, cantidad_organizador_3, 64800);
-
 })
 

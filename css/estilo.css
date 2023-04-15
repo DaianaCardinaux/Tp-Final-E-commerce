@@ -51,9 +51,8 @@ main {
 }
 
 .nav-container{
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(253, 253, 253);
     position: absolute;
-    top: -100;
     left: 0;
     width: 100%;
     height: 0;
@@ -131,7 +130,7 @@ main {
     }
     
     .ContainerEstatico {
-        background-color: rgb(252, 252, 252);
+        background-color: rgb(250, 250, 250);
         position: absolute;
         top: -100;
         left: 0;
@@ -150,7 +149,7 @@ main {
 }
 
 .ContainerEstatico {
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(250, 250, 250);
     position: absolute;
     top: -100;
     left: 0;
@@ -170,6 +169,7 @@ main {
 .carousel{
     position: relative;
     z-index: 0;
+    margin-bottom: -90px;
 }
 
 .carousel-item img {
@@ -195,7 +195,7 @@ main {
 }
 
 .contenedor-pack {
-    margin-top: 10px;
+    margin-top: 5px;
     overflow: hidden;
     height: 100%; 
     transition: all 0.3s ease-in-out;
@@ -215,7 +215,7 @@ main {
     
     .textopack{
         text-align: center;
-        font-size: 13px;
+        font-size: 15px;
         text-align: center;
         margin-top: 20px;
         margin-left: 30px;
@@ -297,6 +297,7 @@ main {
     padding:10px;
     color: black;
     box-shadow: -7px 7px 30px rgba(0, 0, 0, 0.3);
+    font-size: 19px;
 }
 
 .btn-hover:hover{
@@ -304,7 +305,7 @@ main {
 }
 
 .pie{
-    background-color: #fcf0ec;
+    background-color: #f7d0c5;
     border-color:black;
 }
 
@@ -320,6 +321,39 @@ main {
     font-size: 40px;
     color:black;
 }
+
+@media screen and (max-width: 781px) {
+    .botones{
+        background-color: #faa888;
+        border-color: #FFC787;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding: 10px;
+        color: black;
+        box-shadow: -7px 7px 30px rgba(0, 0, 0, 0.3);
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 555px) {
+    .botones{
+        background-color: #faa888;
+        border-color: #FFC787;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding: 10px;
+        color: black;
+        box-shadow: -7px 7px 30px rgba(0, 0, 0, 0.3);
+        font-size: 15px;
+    }
+
+}
+
 
 /* ---------- ¿QUIENES SOMOS? --------- */
 
@@ -413,8 +447,8 @@ main {
 }
 
 .botoncontacto{
-    background-color: #ffcd43;
-    border-color: #fad73e;
+    background-color: #faa888;
+    border-color: #d4a2c2;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -422,5 +456,10 @@ main {
     -o-border-radius: 10px;
     padding:10px;
     color: black;
-    box-shadow: 2px 2px 4px rgba(66, 66, 66, 0.2);
+    box-shadow: 2px 2px 4px rgba(66, 66, 66, 0.4);
 }
+
+.botoncontacto:hover{
+    background-color: rgb(255, 147, 128);
+}
+
