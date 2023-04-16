@@ -121,6 +121,13 @@ function agregarProductoCarrito() {
 
         div_contenedor.appendChild(divContenedor2);
 
+        let total = 0;
+        carrito.forEach(producto => {
+        total += producto.precio;
+    });
+        const elementoTotalCompra = document.getElementById("total");
+        elementoTotalCompra.textContent = `Total: $${total}`;
+
     });
 }
 
@@ -135,7 +142,6 @@ function agregarProducto(nombre, color, cantidad, precio){
     carrito.push(producto);
     agregarProductoCarrito();
 }
-
 
 
 pedido_silla_1.addEventListener('submit', function(event) {
@@ -232,5 +238,6 @@ pedido_organizador_3.addEventListener('submit', function(event) {
     let color_organizador_3 = document.getElementById('color_organizador_3').value;
 
     agregarProducto("Organizador de especias", color_organizador_3, cantidad_organizador_3, 64800);
+
 })
 
