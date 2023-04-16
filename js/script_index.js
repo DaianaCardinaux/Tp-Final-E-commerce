@@ -126,7 +126,7 @@ function agregarProductoCarrito() {
         total += producto.precio;
     });
         const elementoTotalCompra = document.getElementById("total");
-        elementoTotalCompra.textContent = `Total: $${total}`;
+        elementoTotalCompra.textContent = `Total de compra: $${total}`;
 
     });
 }
