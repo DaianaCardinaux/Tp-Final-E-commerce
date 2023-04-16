@@ -1,4 +1,8 @@
 let carrito = [];
+let total = 0;
+let precioBitcoin = 0;
+let precioTron = 0;
+const precioUsd = 400;
 const div_carrito = document.getElementById("div-carrito");
 let pedido_silla_1 = document.getElementById("formulario_silla_1");
 let pedido_silla_2 = document.getElementById("formulario_silla_2");
@@ -13,16 +17,39 @@ let pedido_armario_1 = document.getElementById("formulario_armario_1");
 let pedido_armario_2 = document.getElementById("formulario_armario_2");
 let pedido_armario_3 = document.getElementById("formulario_armario_3");
 
+async function ObtenerPrecios(){
+
+    const response = await fetch("https://api.coincap.io/v2/assets");
+    const datosApi = await response.json();
+
+    datosApi.data.forEach(cripto => {
+        if (cripto.id === "bitcoin") {
+            precioBitcoin = cripto.priceUsd;
+        }
+        if (cripto.id === "tron") {
+            precioTron = cripto.priceUsd;
+        }
+    });
+
+}
+
+ObtenerPrecios();
+
 function enviarPedido(){
     console.log(carrito);
     carrito = [];
+    console.log("El precio total a pagar es: ", total);
     agregarProductoCarrito();
+    const div_contenedor = document.getElementById("contenedor-carrito");
+    div_contenedor.innerHTML = ''; 
 }
 
 function cancelarPedido(){
     console.log("Pedido cancelado");
     carrito = [];
     agregarProductoCarrito();
+    const div_contenedor = document.getElementById("contenedor-carrito");
+    div_contenedor.innerHTML = ''; 
 }
 
 function cambiarImagenSilla1(i) {
@@ -77,6 +104,11 @@ function agregarProductoCarrito() {
     const div_contenedor = document.getElementById("contenedor-carrito");
     div_contenedor.innerHTML = ''; 
     carrito.forEach(function(producto) {
+        total = 0;
+        carrito.forEach(producto => {
+            total += producto.precio;
+        });
+
         const divContenedor2 = document.createElement("div");
         divContenedor2.classList.add("row", "border", "text-decoration-underline", "rounded", "shadow", "p-3", "mb-5", "bg-body-tertiary", "rounded");
 
@@ -121,14 +153,36 @@ function agregarProductoCarrito() {
 
         div_contenedor.appendChild(divContenedor2);
 
-        let total = 0;
-        carrito.forEach(producto => {
-        total += producto.precio;
     });
-        const elementoTotalCompra = document.getElementById("total");
-        elementoTotalCompra.textContent = `Total de compra: $${total}`;
+    let precioTotalBitcoin=(total/precioUsd)/precioBitcoin;
+    let precioTotalTron=(total/precioUsd)/precioTron;
 
-    });
+    const divPreciosTotales = document.createElement("div");
+
+    const divPrecioArs = document.createElement("div");
+    const pPrecioArs = document.createElement("p");
+    divPrecioArs.classList.add("col-12");
+    pPrecioArs.textContent = `Total: ARS ${total}`;
+    divPrecioArs.appendChild(pPrecioArs);
+
+    const divPrecioBitcoin = document.createElement("div");
+    const pPrecioBitcoin = document.createElement("p");
+    divPrecioBitcoin.classList.add("col-12");
+    pPrecioBitcoin.textContent = `Total: BTC ${precioTotalBitcoin}`;
+    divPrecioArs.appendChild(pPrecioBitcoin);
+
+    const divPrecioTron = document.createElement("div");
+    const pPrecioTron = document.createElement("p");
+    divPrecioTron.classList.add("col-12");
+    pPrecioTron.textContent = `Total: TRX ${precioTotalTron}`;
+    divPrecioArs.appendChild(pPrecioTron);
+
+    divPreciosTotales.appendChild(divPrecioArs);
+    divPreciosTotales.appendChild(divPrecioBitcoin);
+    divPreciosTotales.appendChild(divPrecioTron);
+
+    div_contenedor.appendChild(divPreciosTotales);
+
 }
 
 function agregarProducto(nombre, color, cantidad, precio){
