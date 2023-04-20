@@ -390,7 +390,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
             <div class="modal fade" id="silla2" tabindex="-1" aria-labelledby="silla2" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-sm-down modal-dialog-scrollable">
@@ -438,7 +437,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
             <div class="modal fade" id="silla3" tabindex="-1" aria-labelledby="silla3" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-sm-down modal-dialog-scrollable">
@@ -487,7 +485,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
                 <!-- MODAL MESAS -->
 
@@ -537,7 +534,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
             <div class="modal fade" id="mesa2" tabindex="-1" aria-labelledby="mesa2" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-sm-down modal-dialog-scrollable">
@@ -576,7 +572,7 @@
                                             <div class="row">
                                                 <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_2" value="blanco" style="background-color: #EEEEEE;" title="Color disponible" onclick="cambiarImagenMesa2('./imagenes/mesas/mesa blanca cuadrada.jpg')">
                                                 <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_2" value="marron" style="background-color:#663300;" title="Color disponible" onclick="cambiarImagenMesa2('./imagenes/mesas/mesa marron cuadrada.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_2" value="marronclaro" style="background-color:#d47414;" title="Color disponible" onclick="cambiarImagenMesa2('./imagenes/mesas/mesa marron claro cuadrada.jpg)">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_2" value="marronclaro" style="background-color:#d47414;" title="Color disponible" onclick="cambiarImagenMesa2('./imagenes/mesas/mesa marron claro cuadrada.jpg')">
                                             </div>
                                             <button type="submit" class="btn btn-primary btn-hover p-2 botones mt-5">Agregar al Carrito</button>
                                         </form>
@@ -586,7 +582,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
             <div class="modal fade" id="mesa3" tabindex="-1" aria-labelledby="mesa3" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-sm-down modal-dialog-scrollable">
@@ -624,7 +619,7 @@
                                             <label for="exampleColorInput" class="form-label titulosillas fw-bolder">Colores disponibles</label>
                                             <div class="row">
                                                 <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_3" value="negra" style="background-color: #000000;" title="Color disponible" onclick="cambiarImagenMesa3('./imagenes/mesas/mesa negra rectangular.jpg')">
-                                                <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_3" value="marron" style="background-color:#663300;" title="Color disponible" onclick="cambiarImagenMesa3('./imagenes/mesas/mesa marron rectangular.jpg')">
+                                                <input type="radio" class="form-control form-control-color ms-4" id="color_mesa_3" value="marron" style="background-color:#663300;" title="Color disponible" onclick="CambiarImagenMesa3('./imagenes/mesas/mesa marron rectangular.jpg')">
                                             </div>
                                             <button type="submit" class="btn btn-primary btn-hover p-2 botones mt-5">Agregar al Carrito</button>
                                         </form>
@@ -634,7 +629,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
             <!-- MODAL ORGANIZADORES -->
 
@@ -683,7 +677,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
             <div class="modal fade" id="organizador2" tabindex="-1" aria-labelledby="organizador2" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-sm-down modal-dialog-scrollable">
@@ -730,7 +723,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
             <div class="modal fade" id="organizador3" tabindex="-1" aria-labelledby="organizador3" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-sm-down modal-dialog-scrollable">
@@ -777,7 +769,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
             <!-- MODAL ARMARIOS -->
 
@@ -827,7 +818,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
             <div class="modal fade" id="armario2" tabindex="-1" aria-labelledby="armario2" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-sm-down modal-dialog-scrollable">
@@ -875,7 +865,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
             <div class="modal fade" id="armario3" tabindex="-1" aria-labelledby="armario3" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-sm-down modal-dialog-scrollable">
@@ -922,8 +911,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
 
             <!-- MODAL CARRITO -->
             <div class="modal fade" id="carrito" tabindex="-1" aria-labelledby="carrito" aria-hidden="true">
@@ -933,10 +920,7 @@
                             <h1 class="modal-title fs-5 Titulostock fw-bold pb-3" id="exampleModalLabel">Carrito de Productos</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body" id="contenedor-carrito">
-
-                            
-                        </div>
+                        <div class="modal-body" id="contenedor-carrito"></div>
                         <div class="modal-footer">
                             <div id="total"></div>
                             <button type="button" class="btn btn-primary botones " onclick="enviarPedido()">Enviar pedido</button>
